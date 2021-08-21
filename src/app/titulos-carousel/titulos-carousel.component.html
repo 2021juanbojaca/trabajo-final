@@ -1,0 +1,14 @@
+<br>
+<div class="container">
+<div *ngFor="let categoria of categorias;let i=index">
+    <app-boton (onclick)="click(i)" [mensaje]="categoria.nombre"></app-boton>
+</div>
+<hr>
+<ul>
+    <div class="row">
+        <div class="col-md-12">
+            <app-imagenes-carousel [imagenes]="categorias[index].imagenes"></app-imagenes-carousel>
+        </div>
+    </div>
+</ul>
+</div>
